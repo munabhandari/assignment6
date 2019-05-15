@@ -1,0 +1,121 @@
+:root {
+  --bg-color: #686ac8;
+}
+
+section article a {
+  border: 1px solid white;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li {
+  float: left;
+  list-style: none;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  float: left;
+
+  margin-top: 22px;
+}
+nav {
+  float: right;
+}
+header {
+  width: 80%;
+  margin: auto;
+  overflow: auto;
+}
+
+section {
+  width: 80%;
+  margin: auto;
+  overflow: auto;
+}
+section article {
+  width: 50%;
+  float: left;
+}
+section article img {
+  width: 100%;
+}
+main,
+header {
+  color: white;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+article p {
+  line-height: 26px;
+}
+button {
+  background: var(--bgcolor);
+  padding: 5px 10px;
+  border: 1px solid white;
+  color: white;
+}
+nav button {
+  background: white;
+  color: var(--bg-color);
+}
+
+nav {
+  line-height: 30px;
+}
+
+.mobile {
+  display: none;
+}
+
+/* mobile */
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  section article {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inline;
+    float: none;
+    margin: 10px;
+    
+  }
+  .mobile ul{
+    background: #4b4dc8;
+    padding: 10px 10px;
+    display: none;
+  }
+  .mobile:hover ul {
+    display:block;
+    position: absolute;
+    top: 60px;
+  }
+  .mobile li{
+    float: none;
+  }
+  .logo{
+    float: none;
+  }
+
+}
+
